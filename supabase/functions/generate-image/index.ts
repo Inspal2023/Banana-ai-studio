@@ -301,7 +301,7 @@ Processing guidelines:
             } else if (viewType === 'free-view') {
                 // 优化的自由视角提示词生成
                 const horizontalAngle = angle || 45;
-                const verticalAngle = elevation || 30;
+                const verticalAngle = elevation || 0; // 修改默认仰角为0度（水平视角）
                 
                 // 角度映射
                 const horizontalMapping = {
